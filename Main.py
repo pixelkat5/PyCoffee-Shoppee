@@ -1,3 +1,5 @@
+from art import *
+randart("hellooo")
 def waiting():
     print("...")
 
