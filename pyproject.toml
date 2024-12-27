@@ -1,7 +1,9 @@
 [project]
-name = "PythonCoffeeShoppee"
+name = "python-template"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <pixelsworkemail@gmail.com>"]
+authors = ["Your Name <you@example.com>"]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "art>=6.4",
+]
