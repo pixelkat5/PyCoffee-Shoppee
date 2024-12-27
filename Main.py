@@ -2,6 +2,7 @@ def waiting():
     """Simulates waiting by printing an ellipsis."""
     print("...")
 
+
 def print_in_box(text: str) -> None:
     """Prints multi-line text inside a decorative box."""
     margin_width = 2
@@ -13,16 +14,21 @@ def print_in_box(text: str) -> None:
     max_line_length += 2 * margin_width
 
     # Print the top border
-    print(vertical_border_char + horizontal_border_char * max_line_length + vertical_border_char)
+    print(vertical_border_char + horizontal_border_char * max_line_length +
+          vertical_border_char)
 
     # Print each line with margins
     for line in lines:
         left_margin = (max_line_length - len(line)) // 2
         right_margin = max_line_length - (len(line) + left_margin)
-        print(f"{vertical_border_char}{' ' * left_margin}{line}{' ' * right_margin}{vertical_border_char}")
+        print(
+            f"{vertical_border_char}{' ' * left_margin}{line}{' ' * right_margin}{vertical_border_char}"
+        )
 
     # Print the bottom border
-    print(vertical_border_char + horizontal_border_char * max_line_length + vertical_border_char)
+    print(vertical_border_char + horizontal_border_char * max_line_length +
+          vertical_border_char)
+
 
 # Start of the program
 print_in_box("Hey, welcome to my coffee shoppe")
@@ -58,18 +64,26 @@ menu = {
     10: ("Latte", 5)
 }
 
-menu_text = "\n".join(f"{num}. {item} - {price} {currency}" for num, (item, price) in menu.items())
+menu_text = "\n".join(f"{num}. {item} - {price} {currency}"
+                      for num, (item, price) in menu.items())
 print_in_box(f"Here's our menu:\n\n{menu_text}")
 waiting()
 
 while True:
     try:
-        choice = int(input("Please select a drink by entering the corresponding number (1-10): "))
+        choice = int(
+            input(
+                "Please select a drink by entering the corresponding number (1-10): "
+            ))
         if choice in menu:
             selected_item, price = menu[choice]
-            print(f"Great choice, {name}! You've selected {selected_item} for {price} {currency}. Enjoy your drink!")
+            print(
+                f"Great choice, {name}! You've selected {selected_item} for {price} {currency}. Enjoy your drink!"
+            )
             break
         else:
-            print("That's not a valid option. Please select a number from 1 to 10.")
+            print(
+                "That's not a valid option. Please select a number from 1 to 10."
+            )
     except ValueError:
         print("Invalid input. Please enter a number.")
