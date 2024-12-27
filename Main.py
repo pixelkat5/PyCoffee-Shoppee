@@ -1,10 +1,8 @@
 def waiting():
-    """Simulates waiting by printing an ellipsis."""
     print("...")
 
 
 def print_in_box(text: str) -> None:
-    """Prints multi-line text inside a decorative box."""
     margin_width = 2
     horizontal_border_char = '='
     vertical_border_char = '|'
@@ -13,11 +11,11 @@ def print_in_box(text: str) -> None:
     max_line_length = max(len(line) for line in lines)
     max_line_length += 2 * margin_width
 
-    # Print the top border
+    # Prints the top border
     print(vertical_border_char + horizontal_border_char * max_line_length +
           vertical_border_char)
 
-    # Print each line with margins
+    # Prints each line with margins
     for line in lines:
         left_margin = (max_line_length - len(line)) // 2
         right_margin = max_line_length - (len(line) + left_margin)
