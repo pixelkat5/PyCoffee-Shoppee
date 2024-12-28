@@ -1,4 +1,4 @@
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![HitCount](https://hits.dwyl.com/Pixelkat5/PyCoffee-Shoppee.svg?style=flat-square&show=unique)](http://hits.dwyl.com/Pixelkat5/PyCoffee-Shoppee)
 ```
      ________  ________  ________  ________  ________  ________  ________  ________  ________ 
    ╱        ╲╱    ╱   ╲╱        ╲╱    ╱   ╲╱        ╲╱        ╲╱        ╲╱        ╲╱        ╲
