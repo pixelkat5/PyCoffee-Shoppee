@@ -59,8 +59,9 @@ menu = {
     7: ("Milk", 2),
     8: ("Americano", 3),
     9: ("Cappuccino", 4),
-    10: ("Latte", 5)
-    11: ("meth", 1000),
+    10: ("Latte", 5),
+    11: ("Meth :3", 1000),
+    12: ("rakija", 4),
 }
 
 menu_text = "\n".join(f"{num}. {item} - {price} {currency}"
@@ -72,8 +73,8 @@ while True:
     try:
         choice = int(
             input(
-                "Select a drink by entering the corresponding number (1-11): "
-            ))
+                "Select a drink by entering the corresponding number (1-11): ")
+        )
         if choice in menu:
             selected_item, price = menu[choice]
             print(
@@ -81,8 +82,6 @@ while True:
             )
             break
         else:
-            print(
-                "Try reading. idiot."
-            )
+            print("Try reading. idiot.")
     except ValueError:
         print("Invalid input. Please enter a number... idiot.")
