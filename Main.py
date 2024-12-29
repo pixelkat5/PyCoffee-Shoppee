@@ -71,7 +71,7 @@ while True:
     try:
         choice = int(
             input(
-                "Please select a drink by entering the corresponding number (1-10): "
+                "Select a drink by entering the corresponding number (1-10): "
             ))
         if choice in menu:
             selected_item, price = menu[choice]
@@ -81,7 +81,7 @@ while True:
             break
         else:
             print(
-                "That's not a valid option. Please select a number from 1 to 10."
+                "Try reading. idiot."
             )
     except ValueError:
-        print("Invalid input. Please enter a number.")
+        print("Invalid input. Please enter a number... idiot.")
